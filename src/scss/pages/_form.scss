@@ -23,26 +23,6 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-details {
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: #f9f9f9;
-}
 
-summary {
-  font-weight: bold;
-}
 
-.backtoHome {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 0.5rem 1.5rem;
-  background-color: vars.$color-tertiary;
-  color: vars.$color-secondary;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-}
+

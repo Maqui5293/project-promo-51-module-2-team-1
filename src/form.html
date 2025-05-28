@@ -16,14 +16,14 @@
       <load src="./partials/header.html"/>
   <main>
 
-<section class="js_formSection-1 formSection-1">
-  <details class="js_details1 details1">
-    <summary>Escoge tu fondo</summary>
-    <p>Contenido del primer desplegable.</p>
-  </details>
-
-  <details class="js_details2 details2">
-    <summary>Rellena el formulario</summary>
+<section class="form__section">
+  <h2 class="form__section-title">Escoge tu fondo</h2>
+  <div class="form__section-content">
+  </div>
+</section>
+<section class="form__section">
+  <h2 class="form__section-title">Rellena la tarjeta</h2>
+  <div class="form__section-content">
     <form class="js_form form">
       <label for="name" class="js_name name">Título</label>
       <input type="text" id="name" class="js_inputName inputName" placeholder="Escribe el titulo aquí" required />
@@ -44,18 +44,17 @@
       <input type="text" id="user" class="js_inputUserName inputUserName" placeholder="Escribe tu nombre aquí" required />
 
       <a href="card.html" type="submit" class="js_buttonSubmit buttonSubmit">Enviar</button>
-      </details>
+  </div>
+</section>
 
-  <details class="js_details3 details3">
-    <summary>Comparte</summary>
-    <p>Contenido del tercer desplegable.</p>
-    </details>
-      
-    </section>
+<section class="form__section">
+  <h2 class="form__section-title">Comparte</h2>
+  <div class="form__section-content">
+  </div>
+</section>
  </main>
 
-     <load src="./partials/footer.html" />
-    </div>
+<load src="./partials/footer.html" />
     <script src="./js/main.js"></script>
   </body>
 </html>

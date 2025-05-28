@@ -1,3 +1,16 @@
 @use "../core/variables" as vars;
 
-
+.backtoHome {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: vars.$font-family;
+  background-color: vars.$color-tertiary;
+  color: vars.$color-secondary;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
