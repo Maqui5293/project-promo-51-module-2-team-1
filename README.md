@@ -1,1 +1,1 @@
-PROYECTO MODULO 2, GRUPO 1
+Proyecto - Módulo 2 - Equipo 1

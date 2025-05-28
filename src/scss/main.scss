@@ -1,13 +1,5 @@
-/* @use 'core/reset';
-@use 'components/code';
-@use 'components/links';
+@use 'core/reset';
 @use 'layout/page';
 @use 'layout/header';
 @use 'layout/footer';
-@use 'pages/index'; */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@use 'pages/index';
