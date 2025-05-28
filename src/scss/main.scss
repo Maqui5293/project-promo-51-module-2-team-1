@@ -3,8 +3,4 @@
 @use 'layout/header';
 @use 'layout/footer';
 @use 'pages/index';
-@use 'components/form';
-
-body {
-  background-image: url("../images/fondo.png");
-}
+@use 'pages/form';

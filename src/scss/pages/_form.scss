@@ -1,0 +1,15 @@
+@use "../core/variables" as vars;
+
+
+.form {
+  font-family: vars.$font-family;
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
