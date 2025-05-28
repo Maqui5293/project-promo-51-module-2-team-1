@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Proyecto - Módulo 2 - Equipo 1</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="stylesheet" href="./scss/components/form.scss" />
   </head>
   <body>
-    <div class="page">
-      <load src="./partials/header.html"/>
-      <load src="./partials/main.html" />
-      <load src="./partials/footer.html" />
+     <div class="js_page page">
+      <load src="./partials/header.html" />
+     
+  <main>
+   <form class="js_form form">
+      <label for="name" class="js_Name Name">Titulo del Libro </label>
+      <input type="text" id="name" class="js_inputName inputName" placeholder="Escribe el titulo aquí" required />
+      
+      <label for="autor" class="js_Autor Autor">Autor</label>
+      <input type="text" id="autor" class="js_inputAutor inputAutor" placeholder="Escribe el autor aquí" required />
+
+      <label for="género" class="js_Genero Genero">Género del Libro </label>
+      <input type="text" id="genero" class="js_inputGenero inputGenero" placeholder="Escribe el género aquí" required />
+
+      <label for="puntuacion" class="js_Puntuacion Puntuacion">Puntuacion</label>
+      <input type="texto" class="js_inputSinopsis inputSinopsis" placeholder="Escribe una breve sinopsis aquí" required />
+
+      <label for="imagen" class="js_Imagen Imagen">Imagen del Libro</label>
+      <input type="url" id="imagen" class="js_inputImagen inputImagen" placeholder="Escribe la URL de la imagen aquí" required />
+
+      <label for="usuaria" class="js_NombreUsuaria NombreUsuaria">Recomendado por</label>
+      <input type="text" id="usuaria" class="js_inputNombreUsuaria inputNombreUsuaria" placeholder="Escribe tu nombre aquí" required />
+
+      <a href="label.html" type="submit" class="js_buttonSubmit buttonSubmit">Enviar</button>
+  </main>
+
+     <load src="./partials/footer.html" />
     </div>
     <script src="./js/main.js"></script>
   </body>
