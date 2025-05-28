@@ -1,6 +1,5 @@
 @use "../core/variables" as vars;
 
-
 .form {
   font-family: vars.$font-family;
   max-width: 600px;
@@ -14,28 +13,14 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-.backtoinicio{
-   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  background-color: rgb(213, 109, 203);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-.cajita {
+.formSection-1 {
   width: 90%;
   max-width: 600px;
   margin: 30px auto;
   background: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 details {
@@ -48,6 +33,16 @@ details {
 
 summary {
   font-weight: bold;
-  cursor: pointer;
 }
 
+.backtoHome {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5rem 1.5rem;
+  background-color: vars.$color-tertiary;
+  color: vars.$color-secondary;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}

@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Proyecto - Módulo 2 - Equipo 1</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Libreria Virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
-    <div class="page">
     <load src="./partials/header.html" />
     <main>
-      <section id="tarjeta" class="js_tarjeta tarjeta"></section>
+      <section id="card" class="js_card card"></section>
     </main>
     <load src="./partials/footer.html" />
-    </div>
-
-    <button class="js_backtoinicio backtoinicio" onclick="window.location.href='index.html'">Volver al inicio</button>
+    <button class="js_backtoHome backtoHome" onclick="window.location.href='index.html'">Volver</button>
     <script src="./js/main.js"></script>
   </body>
 </html>
