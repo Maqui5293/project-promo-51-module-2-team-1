@@ -24,5 +24,10 @@
 }
 
 
+.form__section-content {
+  display: none;
+}
 
-
+.form__section-content.is-open {
+  display: block;
+}
