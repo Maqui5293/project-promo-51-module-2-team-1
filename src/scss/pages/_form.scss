@@ -20,8 +20,10 @@
 
 .form__section-content {
   display: none;
-}
 
-.form__section-content.is-open {
-  display: block;
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
