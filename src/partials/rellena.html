@@ -3,12 +3,12 @@
     <h2 class="form__section-title">Rellena ⬇️</h2>
   </div>
   <div class="form__section-content">
-    <label for="name" class="js_name name">Título</label>
+    <label for="title" class="js_title title">Título</label>
     <input
       type="text"
-      id="name"
-      class="js_inputName inputName"
-      placeholder="Escribe el titulo aquí"
+      id="title"
+      class="js_inputTitle inputTitle"
+      placeholder="Título"
       required
     />
 
@@ -17,16 +17,16 @@
       type="text"
       id="autor"
       class="js_inputAutor inputAutor"
-      placeholder="Escribe el autor aquí"
+      placeholder="Autor"
       required
     />
 
-    <label for="género" class="js_gender gender">Género</label>
+    <label for="gender" class="js_gender gender">Género</label>
     <input
       type="text"
       id="gender"
       class="js_inputGender inputGender"
-      placeholder="Escribe el género aquí"
+      placeholder="Género"
       required
     />
 
@@ -48,11 +48,14 @@
       />
     </div>
 
-    <label for="puntuacion" class="js_rate rate">Puntuacion</label>
+    <label for="rate" class="js_rate rate">Valoración</label>
     <input
-      type="texto"
+      type="number"
+      id="rate"
       class="js_inputRate inputRate"
-      placeholder="Escribe tu puntuación aquí"
+      placeholder="Valoración del 1 al 10"
+      min="1"
+      max="10"
       required
     />
 
@@ -61,7 +64,7 @@
       type="text"
       id="user"
       class="js_inputUserName inputUserName"
-      placeholder="Escribe tu nombre aquí"
+      placeholder="Nombre y apellidos"
       required
     />
   </div>
