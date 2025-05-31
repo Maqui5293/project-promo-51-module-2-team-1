@@ -1,4 +1,4 @@
-console.log("Funcion de colapsable")
+console.log("Funcion de colapsable");
 
 const toggles = document.querySelectorAll(".js_toggle");
 
