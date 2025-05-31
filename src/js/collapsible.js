@@ -1,4 +1,4 @@
-"use strict";
+console.log("Funcion de colapsable")
 
 const toggles = document.querySelectorAll(".js_toggle");
 
