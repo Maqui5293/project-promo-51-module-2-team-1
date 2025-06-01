@@ -4,10 +4,8 @@
 @use 'layout/footer';
 @use 'pages/index';
 @use 'pages/form';
+@use 'pages/card';
+@use 'pages/cardPreview';
 
-
-body {
-  background-image: url("../images/fondo.png");
-}
 
 
