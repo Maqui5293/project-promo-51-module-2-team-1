@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use "../core/variables" as vars;
 
 body {
@@ -7,3 +8,19 @@ body {
   font-family: vars.$font-family;
   background-image: url("../images/fondo.png");
 }
+=======
+@use "../core/variables" as vars;
+
+body {
+  padding: 2rem;
+  height: 100vh;
+  background-color: vars.$color-bg;
+  font-family: vars.$font-family;
+  background-image: url("../images/fondo.png");
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Montserrat', sans-serif;
+}
+>>>>>>> main

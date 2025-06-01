@@ -13,60 +13,18 @@
     <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
-      <load src="./partials/header.html"/>
-  <main>
-
-<section class="form__section">
-  <h2 class="form__section-title js_toggle">Escoge tu fondo ⬇️</h2>
-  <div class="form__section-content">
-    <p>Ejemplo 1</p>
-  </div>
-</section>
-
-<section class="form__section">
-  <h2 class="form__section-title js_toggle">Rellena la tarjeta ⬇️</h2>
-  <div class="form__section-content">
-    <form class="js_form form">
-      <label for="name" class="js_name name">Título</label>
-      <input type="text" id="name" class="js_inputName inputName" placeholder="Escribe el titulo aquí" required />
-
-      <label for="autor" class="js_autor Autor">Autor</label>
-      <input type="text" id="autor" class="js_inputAutor inputAutor" placeholder="Escribe el autor aquí" required />
-
-      <label for="género" class="js_gender gender">Género</label>
-      <input type="text" id="gender" class="js_inputGender inputGender" placeholder="Escribe el género aquí" required />
-      
-      <label for="imagen" class="js_Imagen Imagen">Imagen</label>
-      <input type="file" id="imagen" class="js_inputImagen inputImagen" required />
-      <div class="preview-container">
-      <img id="preview" class="js_preview preview" src="" alt="Previsualización" style="max-width: 150px; display: none;" />
-      </div>
-
-      <label for="puntuacion" class="js_rate rate">Puntuacion</label>
-      <input type="texto" class="js_inputRate inputRate" placeholder="Escribe tu puntuación aquí" required />
-
-      <label for="user" class="js_userName userName">Recomendado por</label>
-      <input type="text" id="user" class="js_inputUserName inputUserName" placeholder="Escribe tu nombre aquí" required />
-
-      <a href="card.html" type="submit" class="js_buttonSubmit buttonSubmit">Enviar</button></a>
+    <load src="./partials/header.html" />
+    <main class="form__main-container">
+      <form class="js_form form">
+        <load src="./partials/disena.html" />
+        <load src="./partials/rellena.html" />
+        <load src="./partials/comparte.html" />
       </form>
-  </div>
-</section>
+      <load src="./partials/cardPreview.html" />
+    </main>
 
-<section class="form__section ">
-  <h2 class="form__section-title js_toggle">Comparte ⬇️</h2>
-  <div class="form__section-content">
-    <p>Ejemplo 2</p>
-  </div>
-</section>
- </main>
+    <load src="./partials/footer.html" />
 
-
-
-<load src="./partials/footer.html" />
-
-<script src="./js/main.js"></script>
-
-  
+    <script src="./js/main.js"></script>
   </body>
 </html>
