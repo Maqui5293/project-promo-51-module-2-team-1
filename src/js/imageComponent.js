@@ -18,3 +18,4 @@ function mostrarImagen(evento) {
 }
 
 inputFile.addEventListener("change", mostrarImagen); // 4. Escuchamos cambios en el input
+

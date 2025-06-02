@@ -7,3 +7,8 @@ body {
   font-family: vars.$font-family;
   background-image: url("../images/fondo.png");
 }
+
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Montserrat', sans-serif;
+}
