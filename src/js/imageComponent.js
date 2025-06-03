@@ -70,10 +70,8 @@ function mostrarImagen() {
 function readFile(evento) {
   const file = evento.currentTarget.files[0];
   if (file) {
-    reader.addEventListener("load", () => {
-      previewDiv.style.backgroundImage = `url(${reader.result})`; 
-    });
-    reader.readAsDataURL(archivo); // 3. Leemos el archivo como base64
+    lector.addEventListener("load", mostrarImagen, { once: true });
+    lector.readAsDataURL(file);
   } else {
     previewContainer.style.backgroundImage = "";
     previewImage.src = "";
@@ -81,5 +79,12 @@ function readFile(evento) {
   }
 }
 
-inputFile.addEventListener("change", mostrarImagen); // 4. Escuchamos cambios en el input
+// Listeners para inputs
+inputTitle.addEventListener("input", updatePreview);
+inputAutor.addEventListener("input", updatePreview);
+inputGender.addEventListener("input", updatePreview);
+inputRate.addEventListener("input", updatePreview);
+inputUserName.addEventListener("input", updatePreview);
 
+// Listener para imagen
+inputImagen.addEventListener("change", readFile);
