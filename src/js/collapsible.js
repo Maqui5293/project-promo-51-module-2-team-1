@@ -31,7 +31,7 @@ for (const toggle of toggles) {
         h2.textContent = h2.textContent.replace("⬆️", "⬇️");
       }
     }
-  
+
     if (!isOpen) {
       content.classList.add("is-open");
       const h2 = toggle.querySelector(".form__section-title");
