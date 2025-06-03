@@ -1,7 +1,5 @@
 
 const inputImagen = document.querySelector(".js__profile-upload-btn");
-
-
 const previewImage = document.querySelector(".js_previewImage");
 const previewContainer = document.querySelector(".js__profile-image");
 
@@ -39,3 +37,6 @@ function readFile(evento) {
     previewImage.style.display = "none";
   }
 }
+
+// Listener para imagen
+inputImagen.addEventListener("change", readFile);

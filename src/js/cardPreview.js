@@ -51,5 +51,3 @@ inputGender.addEventListener("input", updatePreview);
 inputRate.addEventListener("input", updatePreview);
 inputUserName.addEventListener("input", updatePreview);
 
-// Listener para imagen
-inputImagen.addEventListener("change", readFile);
