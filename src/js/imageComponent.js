@@ -33,7 +33,7 @@ function updateStars(rate) {
   } else if (rate == 5) {
     stars = "⭐⭐⭐⭐⭐";
   } else {
-    stars = ""; // Por si el valor no es válido
+    stars = ""; 
   }
 
   previewStars.textContent = stars;
