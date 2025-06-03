@@ -1,42 +1,33 @@
 
 const inputImagen = document.querySelector(".js__profile-upload-btn");
-const previewImage = document.querySelector(".js_previewImage");
-const previewContainer = document.querySelector(".js__profile-image");
+const profilePreview = document.querySelector(".js__profile-preview"); // Miniatura
+const profileImage = document.querySelector(".js__profile-image"); // Imagen grande
 
-// FileReader
 const lector = new FileReader();
 
-
-
-
-// Actualiza la imagen en la tarjeta preview
 function updateImagePreview() {
-  previewImage.src = lector.result;
-  previewImage.style.display = "block";
+  profilePreview.style.backgroundImage = `url(${lector.result})`;
+  console.log("Imagen cargada:", lector.result);
 }
 
-// Muestra la imagen como fondo en el div y actualiza <img>
 function mostrarImagen() {
-  previewContainer.style.backgroundImage = `url(${lector.result})`;
-  previewContainer.style.backgroundSize = "cover";
-  previewContainer.style.backgroundPosition = "center";
-  previewContainer.style.backgroundRepeat = "no-repeat";
+  profileImage.style.backgroundImage = `url(${lector.result})`;
+  profileImage.style.backgroundSize = "cover";
+  profileImage.style.backgroundPosition = "center";
+  profileImage.style.backgroundRepeat = "no-repeat";
 
-  updateImagePreview(); // También actualiza el <img>
+  updateImagePreview();
 }
 
-// Lee el archivo cuando se selecciona uno
 function readFile(evento) {
   const file = evento.currentTarget.files[0];
   if (file) {
     lector.addEventListener("load", mostrarImagen, { once: true });
     lector.readAsDataURL(file);
   } else {
-    previewContainer.style.backgroundImage = "";
-    previewImage.src = "";
-    previewImage.style.display = "none";
+    profileImage.style.backgroundImage = "";
+    profilePreview.style.backgroundImage = "";
   }
 }
 
-// Listener para imagen
 inputImagen.addEventListener("change", readFile);
