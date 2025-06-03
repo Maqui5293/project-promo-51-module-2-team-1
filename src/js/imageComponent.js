@@ -1,19 +1,41 @@
-console.log("Hola");
 
-const inputFile = document.querySelector(".js__profile-upload-btn");
-const previewDiv = document.querySelector(".js__profile-image");
-const reader = new FileReader();
+const inputImagen = document.querySelector(".js__profile-upload-btn");
 
-function mostrarImagen(evento) {
-  const file = evento.currentTarget.files[0];
-  if (file) {
-    reader.addEventListener("load", () => {
-      previewDiv.style.backgroundImage = `url(${reader.result})`;
-    });
-    reader.readAsDataURL(archivo); // 3. Leemos el archivo como base64
-  } else {
-    previewDiv.style.backgroundImage = ""; // Si no hay archivo, quitamos la imagen
-  }
+
+const previewImage = document.querySelector(".js_previewImage");
+const previewContainer = document.querySelector(".js__profile-image");
+
+// FileReader
+const lector = new FileReader();
+
+
+
+
+// Actualiza la imagen en la tarjeta preview
+function updateImagePreview() {
+  previewImage.src = lector.result;
+  previewImage.style.display = "block";
 }
 
-inputFile.addEventListener("change", mostrarImagen); // 4. Escuchamos cambios en el input
+// Muestra la imagen como fondo en el div y actualiza <img>
+function mostrarImagen() {
+  previewContainer.style.backgroundImage = `url(${lector.result})`;
+  previewContainer.style.backgroundSize = "cover";
+  previewContainer.style.backgroundPosition = "center";
+  previewContainer.style.backgroundRepeat = "no-repeat";
+
+  updateImagePreview(); // También actualiza el <img>
+}
+
+// Lee el archivo cuando se selecciona uno
+function readFile(evento) {
+  const file = evento.currentTarget.files[0];
+  if (file) {
+    lector.addEventListener("load", mostrarImagen, { once: true });
+    lector.readAsDataURL(file);
+  } else {
+    previewContainer.style.backgroundImage = "";
+    previewImage.src = "";
+    previewImage.style.display = "none";
+  }
+}
