@@ -43,4 +43,3 @@ for (const toggle of toggles) {
 }
 
 
-   

@@ -30,29 +30,22 @@
       required
     />
 
-    <label for="imagen" class="js_Imagen Imagen">Imagen</label>
+    <div class="profile__container">
+      <div class="button_image">
+      <label class="action__upload-btn" for="img-selector">Get IMAGE!</label>
+      <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+    </div>    
 
-       <input
-      type="file"
-      id="imagen"
-      class="js__profile-upload-btn inputImagen"
-      
-      required
-    />
+     <div class="profile" >
+      <div class="profile__preview js__profile-preview" id="profileImage" style="background-image: url('./images/Image_example.jpg');">        
+      </div>
+     </div>
 
-     <div
-      class="js__profile-image preview-container"      
-    ></div>
 
-    <div >
-      <img
-      id="preview"
-      class="js_previewImage preview"
-      src=""
-      alt="Previsualización"
-      style="max-width: 150px; display: none"
-/>
     </div>
+
+    
+    
 
     <label for="rate" class="js_rate rate">Valoración</label>
     <input
