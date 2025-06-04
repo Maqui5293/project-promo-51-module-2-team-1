@@ -7,6 +7,8 @@ import "./selectionPalette.js";
 import "./resetButton.js";
 import "./imageComponent.js";
 
+const tarjeta = document.querySelector(".js__profile-image");
+
 const formData = {
   title: "",
   autor: "",
