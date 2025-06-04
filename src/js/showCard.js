@@ -5,15 +5,15 @@ const sectionCard = document.querySelector(".js_card");
 if (sectionCard) {
   const params = new URLSearchParams(window.location.search);
   const uuid = params.get("id");
-  console.log("ID recibido:", uuid);
+  
 
   //Petición GET al servidor
 
-  fetch(`https://dev.adalab.es/api/info/data/${uuid}`)
+  fetch(`https://dev.adalab.es/api/info/${uuid}`)
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
-        paintCard(data.card);
+        paintCard(data.data);
       } else {
         console.error("Error al obtener la tarjeta:", data.error);
       }

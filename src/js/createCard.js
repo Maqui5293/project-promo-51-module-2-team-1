@@ -16,7 +16,7 @@ function getFormData() {
     field4: inputGenderCreate.value,
     field5: inputRateCreate.value,
     field6: inputUserNameCreate.value,
-    photo: "https://placehold.co/200x300",
+    photo: window.photo,
   };
 }
 
@@ -39,7 +39,7 @@ function handleCreateCard(event) {
       if (data.success) {
         const uuid = data.infoID;
         console.log("UUID generado:", uuid);
-        /* window.location.href = `./card.html?id=${uuid}`; */
+        window.location.href = `./card.html?id=${uuid}`;
       } else {
         console.error("Error al crear la tarjeta:", data.error);
       }
