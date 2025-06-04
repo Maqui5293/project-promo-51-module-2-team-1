@@ -4,6 +4,7 @@ const inputAutor = document.querySelector(".js_inputAutor");
 const inputGender = document.querySelector(".js_inputGender");
 const inputRate = document.querySelector(".js_inputRate");
 const inputUserName = document.querySelector(".js_inputUserName");
+const btnCreate = document.querySelector(".js_buttonSubmit");
 
 // Preview elements
 const previewTitle = document.querySelector(".js_previewTitle");
@@ -49,4 +50,47 @@ inputAutor.addEventListener("input", updatePreview);
 inputGender.addEventListener("input", updatePreview);
 inputRate.addEventListener("input", updatePreview);
 inputUserName.addEventListener("input", updatePreview);
+
+// Recoger datos del formulario
+function getFormData() {
+  return {
+    field1: 1,
+    field2: inputTitle.value,
+    field3: inputAutor.value,
+    field4: inputGender.value,
+    field5: inputRate.value,
+    field6: inputUserName.value,
+    photo: window.photo,
+  };
+}
+
+function handleCreateCard(event) {
+  event.preventDefault();
+
+  const userData = getFormData();
+
+  fetch("https://dev.adalab.es/api/info/data", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(userData),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Respuesta del servidor:", data);
+
+      if (data.success) {
+        const uuid = data.infoID;
+        console.log("UUID generado:", uuid);
+        window.location.href = `./card.html?id=${uuid}`;
+      } else {
+        console.error("Error al crear la tarjeta:", data.error);
+      }
+    });
+}
+if (btnCreate) {
+  btnCreate.addEventListener("click", handleCreateCard);
+}
+
 
