@@ -1,4 +1,3 @@
-
 const inputImagen = document.querySelector(".js__profile-upload-btn");
 const profilePreview = document.querySelector(".js__profile-preview"); // Miniatura
 const profileImage = document.querySelector(".js__profile-image"); // Imagen grande
