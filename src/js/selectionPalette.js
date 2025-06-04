@@ -1,3 +1,4 @@
+const tarjeta = document.querySelector('.js_cardPreview');
 const fondoRadios = document.querySelectorAll(".js-fondo-radio");
 
 fondoRadios.forEach((radio) => {
