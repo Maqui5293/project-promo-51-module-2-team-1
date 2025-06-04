@@ -1,9 +1,9 @@
 "use strict";
-console.log("index funciona")
+console.log("index funciona");
 
-import "./cardPreview.js"; 
+import "./cardPreview.js";
 import "./collapsible.js";
 import "./selectionPalette.js";
 import "./resetButton.js";
-import "./imageComponent.js";  
-
+import "./imageComponent.js";
+import "./createCard.js";

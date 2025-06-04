@@ -1,3 +1,4 @@
+window.photo = ""; // creamos variable global para guardar lector.result y luego usarla POST (y en cualquier archivo js)
 
 const inputImagen = document.querySelector(".js__profile-upload-btn");
 const profilePreview = document.querySelector(".js__profile-preview"); // Miniatura
@@ -11,7 +12,8 @@ function updateImagePreview() {
 }
 
 function mostrarImagen() {
-  profileImage.style.backgroundImage = `url(${lector.result})`;
+  window.photo = lector.result;
+  profileImage.style.backgroundImage = `url(${window.photo})`;
   profileImage.style.backgroundSize = "cover";
   profileImage.style.backgroundPosition = "center";
   profileImage.style.backgroundRepeat = "no-repeat";

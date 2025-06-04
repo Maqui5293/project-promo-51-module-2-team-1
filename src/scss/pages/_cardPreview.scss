@@ -1,6 +1,5 @@
 @use "../core/variables" as vars;
 
-
 .form__main-container {
   display: flex;
   flex-direction: row;
@@ -8,7 +7,6 @@
   gap: 2rem;
   margin-left: 200px;
   margin-right: 200px;
-  ;
 }
 
 .cardPreview {
@@ -17,8 +15,8 @@
   height: 650px;
   padding: 20px;
   background-image: url(../images/bg-romance.jpg);
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -26,10 +24,9 @@
   align-items: center;
   gap: 12px;
   text-align: center;
-  
 }
 
-.profile__container{
+.profile__container {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -48,7 +45,7 @@
 }
  */
 
- .profile__preview {
+.profile__preview {
   width: 50px;
   height: 70px;
   background-size: cover;
@@ -60,11 +57,11 @@
 .profile__image {
   width: 200px;
   height: 300px;
-  background-image: url('./images/Image_example.jpg'); 
+  background-image: url("/images/Image_example.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-   border-radius: 12px;
+  border-radius: 12px;
   border: 2px solid #ddd;
 }
 
@@ -72,7 +69,7 @@
   display: none;
 }
 
-.image__container{
+.image__container {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -93,29 +90,26 @@
 .profile__preview {
   width: 50px;
   height: 70px;
-  margin-left: 15px;  
+  margin-left: 15px;
 }
 
-
-.action__upload-btn { margin-top: 1.5rem;
+.action__upload-btn {
+  margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
-  background-color:vars.$color-tertiary;
+  background-color: vars.$color-tertiary;
   color: #333;
   border: none;
   border-radius: 1rem;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   align-self: center;
   display: block;
   margin-left: auto;
-  margin-right: auto;}
-
-
-
- 
+  margin-right: auto;
+}
 
 .resetBtn {
   margin-top: 1.5rem;
@@ -125,7 +119,7 @@
   border: none;
   border-radius: 1rem;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
