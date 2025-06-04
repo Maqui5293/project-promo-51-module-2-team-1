@@ -27,7 +27,7 @@ function updateStars(rate) {
   } else if (rate == 5) {
     stars = "⭐⭐⭐⭐⭐";
   } else {
-    stars = "";
+    stars = "⭐⭐⭐⭐⭐";
   }
 
   previewStars.textContent = stars;
@@ -35,21 +35,12 @@ function updateStars(rate) {
 
 // Actualiza los campos de texto del preview
 function updatePreview() {
-  previewTitle.textContent = inputTitle.value;
-  previewAutor.textContent = inputAutor.value;
-  previewGender.textContent = inputGender.value;
-  previewUserName.textContent = inputUserName.value;
+  previewTitle.textContent = inputTitle.value || "Título del libro";
+  previewAutor.textContent = inputAutor.value || "Autor/a";
+  previewGender.textContent = inputGender.value || "Género";
+  previewUserName.textContent = inputUserName.value || "Nombre y apellidos";
 
   updateStars(inputRate.value);
-
-  const formData = {
-    title: inputTitle.value,
-    autor: inputAutor.value,
-    gender: inputGender.value,
-    rate: inputRate.value,
-    userName: inputUserName.value,
-  };
-  localStorage.setItem("miLibroFavorito", JSON.stringify(formData));
 }
 
 // Listeners para inputs
@@ -58,3 +49,4 @@ inputAutor.addEventListener("input", updatePreview);
 inputGender.addEventListener("input", updatePreview);
 inputRate.addEventListener("input", updatePreview);
 inputUserName.addEventListener("input", updatePreview);
+

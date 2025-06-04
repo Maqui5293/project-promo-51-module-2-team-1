@@ -1,5 +1,3 @@
-"use strict";
-
 // Boton de reset
 const resetBtn = document.querySelector(".js_resetBtn");
 
