@@ -1,8 +1,14 @@
 @use "../core/variables" as vars;
 
-.backtoHome {
+.button-group {
+  display: flex;
+  gap: 1rem;
   bottom: 20px;
   right: 20px;
+}
+
+.backtoHome,
+.share-twitter {
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
   font-weight: bold;
@@ -12,4 +18,9 @@
   border: none;
   border-radius: 1rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
 }
+

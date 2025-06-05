@@ -17,12 +17,31 @@
     <load src="./partials/header.html" />
     <main>
       <section id="card" class="js_card card"></section>
-      <button
-        class="js_backtoHome backtoHome"
-        onclick="window.location.href='index.html'"
-      >
-        Volver
-      </button>
+      <div class="button-group">
+        <button
+          class="share-twitter"
+          onclick="window.open('https://twitter.com/intent/tweet?text=¡Mira%20mi%20recomendación%20de%20libro!%20'+encodeURIComponent(window.location.href),'_blank')"
+          aria-label="Compartir en Twitter"
+        >
+          <img
+            src="./images/twitter.png"
+            alt="Twitter"
+            style="
+              width: 20px;
+              height: 20px;
+              vertical-align: middle;
+              margin-right: 0.5rem;
+            "
+          />
+          Compartir en Twitter
+        </button>
+        <button
+          class="js_backtoHome backtoHome"
+          onclick="window.location.href='index.html'"
+        >
+          Volver
+        </button>
+      </div>
     </main>
     <load src="./partials/footer.html" />
 
