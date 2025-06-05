@@ -3,7 +3,7 @@ const resetBtn = document.querySelector(".js_resetBtn");
 
 // Función para resetear el formulario y la previsualización
 function resetFormAndPreview() {
-  console.log("Reset hecho");
+
   // Reset campos del formulario
   inputTitle.value = "";
   inputAutor.value = "";
@@ -23,4 +23,6 @@ function resetFormAndPreview() {
   inputImagen.value = "";
 }
 // Evento para el botón
-resetBtn.addEventListener("click", resetFormAndPreview);
+if (resetBtn) {
+  resetBtn.addEventListener("click", resetFormAndPreview);
+}

@@ -45,14 +45,24 @@ function updatePreview() {
 }
 
 // Listeners para inputs
-inputTitle.addEventListener("input", updatePreview);
-inputAutor.addEventListener("input", updatePreview);
-inputGender.addEventListener("input", updatePreview);
-inputRate.addEventListener("input", updatePreview);
-inputUserName.addEventListener("input", updatePreview);
+if (inputTitle) inputTitle.addEventListener("input", updatePreview);
+if (inputAutor) inputAutor.addEventListener("input", updatePreview);
+if (inputGender) inputGender.addEventListener("input", updatePreview);
+if (inputRate) inputRate.addEventListener("input", updatePreview);
+if (inputUserName) inputUserName.addEventListener("input", updatePreview);
 
 // Recoger datos del formulario
 function getFormData() {
+  let fondoSeleccionado = "";
+  const fondoRadios = document.querySelectorAll(".js-fondo-radio");
+
+  for (const radio of fondoRadios) {
+    if (radio.checked) {
+      fondoSeleccionado = radio.value;
+      break;
+    }
+  }
+
   return {
     field1: 1,
     field2: inputTitle.value,
@@ -60,6 +70,7 @@ function getFormData() {
     field4: inputGender.value,
     field5: inputRate.value,
     field6: inputUserName.value,
+    field7: fondoSeleccionado, 
     photo: window.photo,
   };
 }

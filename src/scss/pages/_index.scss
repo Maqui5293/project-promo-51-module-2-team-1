@@ -10,10 +10,21 @@
   gap: 1rem;
 }
 
+.main__section-1 h2 {
+  font-size: 1.5rem;
+  @media (min-width: 1200px) {
+    font-size: 2.2rem;
+  }
+}
+
 .main__section-1 p {
   max-width: 650px;
   margin: 0 auto;
   text-align: center;
+  font-size: 1rem;
+  @media (min-width: 1200px) {
+    font-size: 1.3rem;
+  }
 }
 
 .main__section-2 {
@@ -37,6 +48,9 @@
   width: 100%;
   max-width: 50px;
   height: auto;
+  @media (min-width: 1200px) {
+    max-width: 80px;
+  }
 }
 
 .main__section-3 {
@@ -58,4 +72,8 @@
   color: vars.$color-secondary;
   border: none;
   cursor: pointer;
+  @media (min-width: 1200px) {
+    font-size: 1.3rem;
+    padding: 1.2rem 2.5rem;
+  }
 }
