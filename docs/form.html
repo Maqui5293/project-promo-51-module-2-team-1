@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Libreria Virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./assets/main-bc06b428.css">
+  </head>
+  <body>
+    <header class="page__header">
+  <img src="./images/logo.png" alt="Mi libro favorito" class="page__logo">
+  <h1>Comparte tu Libro Favorito con el mundo</h1>
+</header>
+    <main class="form__main-container">
+      <form class="js_form form">
+        <section class="form__section-1">
+  <div class="js_toggle">
+    <h2 class="form__section-title">Diseña ⬇️</h2>
+  </div>
+  <div class="form__section-content">
+    <fieldset>
+      <div class="palette-options">
+
+        <label class="palette-option">
+          <input type="radio" name="background" value="romance" class="js-fondo-radio" checked />
+          <div class="bg-preview romance-bg-preview"></div>
+          <p>Fondo Romance</p>
+        </label>
+
+        <label class="palette-option">
+          <input type="radio" name="background" value="misterio" class="js-fondo-radio" />
+          <div class="bg-preview misterio-bg-preview"></div>
+          <p>Fondo Misterio</p>
+        </label>
+
+        <label class="palette-option">
+          <input type="radio" name="background" value="cienciaficcion" class="js-fondo-radio" />
+          <div class="bg-preview cienciaficcion-bg-preview"></div>
+          <p>Fondo Ciencia Ficción</p>
+        </label>
+
+        <label class="palette-option">
+          <input type="radio" name="background" value="fantasia" class="js-fondo-radio" />
+          <div class="bg-preview fantasia-bg-preview"></div>
+          <p>Fondo Fantasía</p>
+        </label>
+
+
+        <label class="palette-option">
+          <input type="radio" name="background" value="poesia" class="js-fondo-radio" />
+          <div class="bg-preview poesia-bg-preview"></div>
+          <p>Fondo Poesía</p>
+        </label>
+
+      </div>
+
+    </fieldset>
+  </div>
+</section>
+        <section class="form__section-2">
+  <div class="js_toggle">
+    <h2 class="form__section-title">Rellena ⬇️</h2>
+  </div>
+  <div class="form__section-content">
+    <label for="title" class="js_title title">Título del libro</label>
+    <input
+      type="text"
+      id="title"
+      class="js_inputTitle inputTitle"
+      placeholder="Título del libro"
+      required
+    />
+
+    <label for="autor" class="js_autor Autor">Autor/a</label>
+    <input
+      type="text"
+      id="autor"
+      class="js_inputAutor inputAutor"
+      placeholder="Autor/a"
+      required
+    />
+
+    <label for="gender" class="js_gender gender">Género</label>
+    <input
+      type="text"
+      id="gender"
+      class="js_inputGender inputGender"
+      placeholder="Género"
+      required
+    />
+
+    <div class="profile__container">
+      <div class="button_image">
+      <label class="action__upload-btn" for="img-selector">¡Sube la portada!</label>
+      <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+    </div>    
+
+     <div class="profile" >
+      <div class="profile__preview js__profile-preview" id="profileImage" style="background-image: url('./images/Image_example.jpg');">        
+      </div>
+     </div>
+
+
+    </div>
+
+    
+    
+
+    <label for="rate" class="js_rate rate">Valoración</label>
+    <input
+      type="number"
+      id="rate"
+      class="js_inputRate inputRate"
+      placeholder="Valoración del 1 al 5"
+      min="1"
+      max="5"
+      required
+    />
+
+    <label for="user" class="js_userName userName">Recomendado por</label>
+    <input
+      type="text"
+      id="user"
+      class="js_inputUserName inputUserName"
+      placeholder="Nombre y apellidos"
+      required
+    />
+  </div>
+</section>
+
+
+
+        <form class="js_form form">
+  <!-- Otras secciones... -->
+  <section class="form__section-3">
+    <div class="js_toggle">
+      <h2 class="form__section-title">Comparte ⬇️</h2>
+    </div>
+    <div class="form__section-content">
+      <button type="submit" class="buttonSubmit js_buttonSubmit">
+        Crear Tarjeta
+      </button>
+    </div>
+  </section>
+</form>
+      </form>
+      <section class="js_cardPreview cardPreview">
+  <h3 class="js_previewTitle">Título del libro</h3>
+  <h3 class="js_previewAutor">Autor/a</h3>
+  <h3 class="js_previewGender">Género</h3>
+  <h3 class="js_previewRate starRate">⭐⭐⭐⭐⭐</h3>
+  <div class="profile__image js__profile-image"></div>
+  <h3 class="js_previewUserName">Nombre y apellidos</h3>
+
+  <button type="button" class="js_resetBtn resetBtn">Resetear tarjeta</button>
+</section>
+
+    </main>
+
+    <footer class="page__footer">
+  <p>&copy; Proyecto - Módulo 2 - Equipo 1</p>
+</footer>
+
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
