@@ -32,10 +32,11 @@
 
 .form__section-content {
   display: none;
-
   &.is-open {
     display: flex;
     flex-direction: column;
+    align-items: center;     
+    text-align: center;  
     gap: 1rem;
     padding: 1rem;
   }
@@ -57,6 +58,10 @@
   align-self: center;
   min-width: 150px; 
   max-width: 100%;
+}
+.action__upload-btn:hover {
+  background-color: vars.$color-secondary;
+  color:white
 }
 
 .palette-options {
@@ -155,7 +160,7 @@ input {
   margin-bottom: 10px;
 }
 
-.js__profile-image {
+.profile-image {
   width: 150px;
   height: 150px;
   background-size: contain;
@@ -164,3 +169,17 @@ input {
   border: 1px solid #ccc;
   border-radius: 8px;
 }
+
+.inputstyle {
+  width: 80%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid vars.$color-secondary;
+  margin-bottom: 1rem;
+}
+
+/* .labelstyle{
+
+
+} */

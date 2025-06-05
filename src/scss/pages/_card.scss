@@ -1,5 +1,11 @@
 @use "../core/variables" as vars;
 
+
+.card__main-container{
+  display: flex;  
+  flex-direction: column;
+}
+
 .button-group {
   display: flex;
   gap: 1rem;
@@ -24,3 +30,9 @@
   text-decoration: none;
 }
 
+.card{
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+
+}
