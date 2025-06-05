@@ -32,4 +32,6 @@ function readFile(evento) {
   }
 }
 
-inputImagen.addEventListener("change", readFile);
+if (inputImagen) {
+  inputImagen.addEventListener("change", readFile);
+}

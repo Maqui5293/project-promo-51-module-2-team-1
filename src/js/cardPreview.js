@@ -45,11 +45,19 @@ function updatePreview() {
 }
 
 // Listeners para inputs
-inputTitle.addEventListener("input", updatePreview);
+if (inputTitle) inputTitle.addEventListener("input", updatePreview);
+if (inputAutor) inputAutor.addEventListener("input", updatePreview);
+if (inputGender) inputGender.addEventListener("input", updatePreview);
+if (inputRate) inputRate.addEventListener("input", updatePreview);
+if (inputUserName) inputUserName.addEventListener("input", updatePreview);
+
+
+/* inputTitle.addEventListener("input", updatePreview);
 inputAutor.addEventListener("input", updatePreview);
 inputGender.addEventListener("input", updatePreview);
 inputRate.addEventListener("input", updatePreview);
 inputUserName.addEventListener("input", updatePreview);
+ */
 
 // Recoger datos del formulario
 function getFormData() {
