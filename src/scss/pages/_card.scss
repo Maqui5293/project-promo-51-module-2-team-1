@@ -9,8 +9,9 @@
 .button-group {
   display: flex;
   gap: 1rem;
-  bottom: 20px;
-  right: 20px;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .backtoHome,
