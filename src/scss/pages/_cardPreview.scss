@@ -1,22 +1,5 @@
 @use "../core/variables" as vars;
 
-.form__main-container {
-  display: flex;
-  flex-direction: column; 
-  gap: 2rem;
-  margin-left: 0;
-  margin-right: 0;
-  align-items: center;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
-    align-items: flex-start;
-  }
-}
-
 .cardPreview {
   font-family: vars.$font-family;
   width: 100%;
@@ -46,12 +29,14 @@
   }
 }
 
+
 .cardPreview h3 {
   font-size: 1.1rem;
   @media (min-width: 1200px) {
     font-size: 1.5rem;
   }
 }
+
 
 .profile__container {
   display: flex;

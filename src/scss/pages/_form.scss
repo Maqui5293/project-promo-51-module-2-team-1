@@ -1,22 +1,27 @@
 @use "../core/variables" as vars;
 
+
+
 .form__main-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; 
   gap: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  align-items: center;
 
   @media (min-width: 768px) {
     flex-direction: row;
-    align-items: flex-start;
-  }
-  @media (min-width: 1200px) {
-    gap: 4rem;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    align-items: center;
   }
 }
 
 .form {
-  font-family: vars.$font-family;
-  width: 600px;
+  font-family: vars.$font-family;  
+  width: 700px;
   height: 100%;
   padding: 2rem;
   display: flex;
@@ -27,6 +32,8 @@
 
   @media (min-width: 1200px) {
     font-size: 1.25rem;
+      width: 750px;
+  height: 100%;
   }
 }
 
@@ -39,14 +46,29 @@
     text-align: center;  
     gap: 1rem;
     padding: 1rem;
+   
   }
 }
 
+.form__section-1,
+.form__section-2,
+.form__section-3
+{
+  
+  border: solid vars.$color-tertiary 1px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
 .buttonSubmit {
+  display: block;
+  margin-left: auto;
   padding: 0.8rem 2rem;
   margin-top: 1rem;
   font-size: 1rem;
-  font-weight: bold;
+ 
   border-radius: 1rem;
   text-decoration: none;
   font-family: vars.$font-family;
@@ -54,7 +76,7 @@
   color: vars.$color-secondary;
   border: none;
   cursor: pointer;
-  width: fit-content; 
+  
   align-self: center;
   min-width: 150px; 
   max-width: 100%;
@@ -74,7 +96,6 @@
 
 label {
   display: inline-block;
-  cursor: pointer;
   text-align: center;
   font-size: 0.9rem;
   @media (min-width: 1200px) {
@@ -177,6 +198,20 @@ input {
   border-radius: 8px;
   border: 2px solid vars.$color-secondary;
   margin-bottom: 1rem;
+  text-align: center;;
+}
+
+.profile__container{
+  display: flex;
+   align-items: center;
+  background-color: aqua;
+}
+
+.button_image{
+   display: flex;
+   align-items: center;
+  
+  
 }
 
 /* .labelstyle{
