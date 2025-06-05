@@ -53,6 +53,16 @@ if (inputUserName) inputUserName.addEventListener("input", updatePreview);
 
 // Recoger datos del formulario
 function getFormData() {
+  let fondoSeleccionado = "";
+  const fondoRadios = document.querySelectorAll(".js-fondo-radio");
+
+  for (const radio of fondoRadios) {
+    if (radio.checked) {
+      fondoSeleccionado = radio.value;
+      break;
+    }
+  }
+
   return {
     field1: 1,
     field2: inputTitle.value,
@@ -60,6 +70,7 @@ function getFormData() {
     field4: inputGender.value,
     field5: inputRate.value,
     field6: inputUserName.value,
+    field7: fondoSeleccionado, 
     photo: window.photo,
   };
 }

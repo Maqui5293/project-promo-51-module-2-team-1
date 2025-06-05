@@ -22,7 +22,7 @@ if (sectionCard) {
 
 function paintCard(data) {
   sectionCard.innerHTML = `
-    <article class="card__preview">
+    <article class="cardPreview ${data.field7}">
       <h2 class="card__title">${data.field2}</h2>               <!-- Título -->
       <p class="card__author">${data.field3}</p>                <!-- Autor -->
       <p class="card__gender">${data.field4}</p>                <!-- Género -->
