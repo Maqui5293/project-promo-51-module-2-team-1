@@ -94,7 +94,7 @@ function handleCreateCard(event) {
       if (data.success) {
         const uuid = data.infoID;
         console.log("UUID generado:", uuid);
-        window.location.href = `./card.html?id=${uuid}`;
+        window.open(`./card.html?id=${uuid}`, '_blank');
       } else {
         console.error("Error al crear la tarjeta:", data.error);
       }
