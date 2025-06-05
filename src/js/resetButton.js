@@ -3,7 +3,6 @@ const resetBtn = document.querySelector(".js_resetBtn");
 
 // Función para resetear el formulario y la previsualización
 function resetFormAndPreview() {
-
   // Reset campos del formulario
   inputTitle.value = "";
   inputAutor.value = "";
@@ -12,11 +11,11 @@ function resetFormAndPreview() {
   inputUserName.value = "";
 
   // Reset preview texto
-  previewTitle.textContent = "";
-  previewAutor.textContent = "";
-  previewGender.textContent = "";
-  previewStars.textContent = "";
-  previewUserName.textContent = "";
+  previewTitle.textContent = "Título del libro";
+  previewAutor.textContent = "Autor/a";
+  previewGender.textContent = "Género";
+  previewStars.textContent = "⭐⭐⭐⭐⭐";
+  previewUserName.textContent = "Nombre y apellidos";
 
   profileImage.removeAttribute("style");
   profilePreview.removeAttribute("style");
