@@ -39,7 +39,7 @@ function updatePreview() {
   previewTitle.textContent = inputTitle.value || "Título del libro";
   previewAutor.textContent = inputAutor.value || "Autor/a";
   previewGender.textContent = inputGender.value || "Género";
-  previewUserName.textContent = inputUserName.value || "Nombre y apellidos";
+  previewUserName.textContent = inputUserName.value || "Nombre o usuario";
 
   updateStars(inputRate.value);
 }

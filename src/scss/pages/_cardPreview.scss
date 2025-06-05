@@ -25,17 +25,17 @@
   @media (min-width: 1200px) {
     width: 400px;
     min-height: 650px;
-    font-size: 1.25rem;
+   /*  font-size: 1.25rem; */
   }
 }
 
 
-.cardPreview h3 {
+/* .cardPreview h3 {
   font-size: 1.1rem;
   @media (min-width: 1200px) {
     font-size: 1.5rem;
   }
-}
+} */
 
 
 .profile__container {
@@ -65,7 +65,7 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 12px;
-  border: 2px solid #ddd;
+ 
 }
 
 .action__hiddenField {
@@ -96,23 +96,7 @@
   margin-left: 15px;
 }
 
-.action__upload-btn {
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: vars.$color-tertiary;
-  color: #333;
-  border: none;
-  border-radius: 1rem;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  align-self: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .previewContainer {
   display: flex;
@@ -120,9 +104,7 @@
   align-items: center;
   }
 
-
-
-  
+ 
 
 .resetBtn {
   margin-top: 1.5rem;
@@ -139,9 +121,23 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .resetBtn:hover {
-  background-color: #f3f3f3;
+  background-color: vars.$color-secondary;
+  color: vars.$color-bg;
   transform: scale(1.05);
+}
+
+.previewTitle{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: vars.$color-tertiary;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  @media (min-width: 1200px) {
+    font-size: 1.5rem;
+  }
 }
