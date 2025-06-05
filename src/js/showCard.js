@@ -1,11 +1,8 @@
-"use strict";
-
 const sectionCard = document.querySelector(".js_card");
 
 if (sectionCard) {
   const params = new URLSearchParams(window.location.search);
   const uuid = params.get("id");
-  
 
   //Petición GET al servidor
 
