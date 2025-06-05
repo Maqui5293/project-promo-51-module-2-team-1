@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     
-    <link rel="stylesheet" href="./assets/main-bc06b428.css">
+    <link rel="stylesheet" href="./assets/main-92520013.css">
   </head>
   <body>
     <header class="page__header">
@@ -70,11 +70,11 @@
     <h2 class="form__section-title">Rellena ⬇️</h2>
   </div>
   <div class="form__section-content">
-    <label for="title" class="js_title title">Título del libro</label>
+    <label for="title" class="js_title title labelstyle">Título del libro</label>
     <input
       type="text"
       id="title"
-      class="js_inputTitle inputTitle"
+      class="js_inputTitle inputTitle inputstyle"
       placeholder="Título del libro"
       required
     />
@@ -83,7 +83,7 @@
     <input
       type="text"
       id="autor"
-      class="js_inputAutor inputAutor"
+      class="js_inputAutor inputAutor inputstyle"
       placeholder="Autor/a"
       required
     />
@@ -92,7 +92,7 @@
     <input
       type="text"
       id="gender"
-      class="js_inputGender inputGender"
+      class="js_inputGender inputGender inputstyle"
       placeholder="Género"
       required
     />
@@ -101,24 +101,22 @@
       <div class="button_image">
       <label class="action__upload-btn" for="img-selector">¡Sube la portada!</label>
       <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+      <p class="form__error js_imageError"></p>
     </div>    
 
      <div class="profile" >
       <div class="profile__preview js__profile-preview" id="profileImage" style="background-image: url('./images/Image_example.jpg');">        
       </div>
      </div>
-
-
     </div>
 
-    
-    
+       
 
     <label for="rate" class="js_rate rate">Valoración</label>
     <input
       type="number"
       id="rate"
-      class="js_inputRate inputRate"
+      class="js_inputRate inputRate inputstyle"
       placeholder="Valoración del 1 al 5"
       min="1"
       max="5"
@@ -129,7 +127,7 @@
     <input
       type="text"
       id="user"
-      class="js_inputUserName inputUserName"
+      class="js_inputUserName inputUserName inputstyle"
       placeholder="Nombre y apellidos"
       required
     />
@@ -139,7 +137,6 @@
 
 
         <form class="js_form form">
-  <!-- Otras secciones... -->
   <section class="form__section-3">
     <div class="js_toggle">
       <h2 class="form__section-title">Comparte ⬇️</h2>
@@ -152,16 +149,20 @@
   </section>
 </form>
       </form>
-      <section class="js_cardPreview cardPreview">
-  <h3 class="js_previewTitle">Título del libro</h3>
-  <h3 class="js_previewAutor">Autor/a</h3>
-  <h3 class="js_previewGender">Género</h3>
-  <h3 class="js_previewRate starRate">⭐⭐⭐⭐⭐</h3>
-  <div class="profile__image js__profile-image"></div>
-  <h3 class="js_previewUserName">Nombre y apellidos</h3>
-
+      <div class="previewContainer">
   <button type="button" class="js_resetBtn resetBtn">Resetear tarjeta</button>
-</section>
+
+  <section class="js_cardPreview cardPreview">
+  <h3 class="js_previewTitle previewTitle">Título del libro</h3>
+  <h3 class="js_previewAutor previewAutor">Autor/a</h3>
+  <h3 class="js_previewGender previewGender">Género</h3>
+  <h3 class="js_previewRate starRate">⭐⭐⭐⭐⭐</h3>
+  <div class="js__profile-image profile__image"></div>
+  <h3 class="js_previewUserName previewUserName">Nombre y apellidos</h3>
+  </section>
+</div>
+
+
 
     </main>
 
