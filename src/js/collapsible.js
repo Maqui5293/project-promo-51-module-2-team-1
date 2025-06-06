@@ -9,16 +9,16 @@ for (const toggle of toggles) {
       const otherContent = otherToggle.nextElementSibling;
       otherContent.classList.remove("is-open");
       const h2 = otherToggle.querySelector(".form__section-title");
-      if (h2) {
-        h2.textContent = h2.textContent.replace("⬆️", "⬇️");
+        if (h2 && h2.dataset.label) {
+        h2.textContent = `${h2.dataset.label} 📘`;
       }
     }
 
     if (!isOpen) {
       content.classList.add("is-open");
       const h2 = toggle.querySelector(".form__section-title");
-      if (h2) {
-        h2.textContent = h2.textContent.replace("⬇️", "⬆️");
+      if (h2 && h2.dataset.label) {
+        h2.textContent = `${h2.dataset.label} 📖`;
       }
     }
   });

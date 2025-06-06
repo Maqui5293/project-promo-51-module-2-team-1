@@ -1,5 +1,7 @@
 @use "../core/variables" as vars;
 
+
+
 .main__section-1 {
   display: flex;
   flex-direction: column;
@@ -12,8 +14,9 @@
 
 .main__section-1 h2 {
   font-size: 1.5rem;
+   font-family: vars.$font-title;
   @media (min-width: 1200px) {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 }
 

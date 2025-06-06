@@ -76,16 +76,23 @@
   transform: scale(1.05);
 }
 
+h2{
+  font-family: vars.$font-title;
+  font-size: 1.5rem;  
+   @media (min-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
 .form__section-1,
 .form__section-2,
 .form__section-3{ 
   border: solid vars.$color-tertiary 1px;
   border-radius: 10px;
   padding: 10px;
-  cursor: pointer;
+  cursor: pointer;  
+  font-size: 2rem;
 }
-
-
 
 .palette-options {
   display: flex;
@@ -172,8 +179,6 @@ input {
   color: white;
 }
 
-
-
 .profile-image {
   width: 150px;
   height: 150px;
@@ -191,22 +196,19 @@ input {
   border-radius: 8px;
   border: 1px solid rgb(245, 237, 237);
   margin-bottom: 1rem;
-  text-align: center;;
-  
+  text-align: center;  
 }
 
 .profile__container{
   display: flex;
    align-items: center;
    margin-bottom: 10px;
-
 }
 
 .button_image{
    display: flex;
    align-items: center;
-  transition: all;
-  
+  transition: all;  
 }
 
 .action__upload-btn {
@@ -233,7 +235,8 @@ input {
   transform: scale(1.05);
 }
 
-/* .labelstyle{
-
-
-} */
+.form__error{
+  font-size: 0.9rem;
+  @media (min-width: 1200px) {
+    font-size: 1.25rem;
+}}
