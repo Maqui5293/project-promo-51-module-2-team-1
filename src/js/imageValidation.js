@@ -8,14 +8,14 @@ if (inputImage) {
     const file = event.target.files[0]; //Coge el archivo que el usuario subió.
     if (!file) return;
 
-    // define el tamaño máximo: 2MB y el formato válido.
-    const maxSize = 2 * 1024 * 1024;
+    // define el tamaño máximo: 5KB y el formato válido.
+    const maxSize = 5 * 1024;
     const validTypes = ["image/jpeg", "image/png", "image/gif"];
 
     // Si la imagen es demasiado grande o no es del formato válido, muestra un mensaje de error.
     if (file.size > maxSize) {
       errorMessage.textContent =
-        "❌ Tu imagen es demasiado grande. Selecciona una con máximo 2MB.";
+        "❌ Tu imagen es demasiado grande. Selecciona una con máximo 5KB.";
       inputImage.value = "";
       window.photo = null;
       imagePreview.style.backgroundImage = "url('./images/Image_example.jpg')";
